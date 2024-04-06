@@ -1,0 +1,8 @@
+C:\Users\ugurxaslan\Desktop\CodeMaster\codeMaster_soru1\codeMaster_soru1\obj\Debug\codeMaster_soru1.csproj.AssemblyReference.cache
+C:\Users\ugurxaslan\Desktop\CodeMaster\codeMaster_soru1\codeMaster_soru1\obj\Debug\codeMaster_soru1.csproj.SuggestedBindingRedirects.cache
+C:\Users\ugurxaslan\Desktop\CodeMaster\codeMaster_soru1\codeMaster_soru1\obj\Debug\codeMaster_soru1.csproj.CoreCompileInputs.cache
+C:\Users\ugurxaslan\Desktop\CodeMaster\codeMaster_soru1\codeMaster_soru1\bin\Debug\codeMaster_soru1.exe.config
+C:\Users\ugurxaslan\Desktop\CodeMaster\codeMaster_soru1\codeMaster_soru1\bin\Debug\codeMaster_soru1.exe
+C:\Users\ugurxaslan\Desktop\CodeMaster\codeMaster_soru1\codeMaster_soru1\bin\Debug\codeMaster_soru1.pdb
+C:\Users\ugurxaslan\Desktop\CodeMaster\codeMaster_soru1\codeMaster_soru1\obj\Debug\codeMaster_soru1.exe
+C:\Users\ugurxaslan\Desktop\CodeMaster\codeMaster_soru1\codeMaster_soru1\obj\Debug\codeMaster_soru1.pdb

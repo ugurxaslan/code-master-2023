@@ -1,0 +1,93 @@
+#############################################
+#	main()
+#	 int n = 10;
+#	 int sonuc =0;
+#	 sonuc=faktoriyel(n)
+#	 return 0;
+#
+#	faktoriyel(n)
+#	 int f=1;
+#	 int i=1;
+#
+#	 if(n=0)
+#		return 1;
+#
+#	 while(i<=n)
+#		f=f*i;
+#
+#	 return sonuc;
+#############################################
+	.data
+n:	.word 10
+sonuc:	.space 4
+
+	.text
+	.global main
+
+main:	la	$t0,n		#n adresinin okudum
+	lw	$t0,($t0)	#n adresindeki sayıyı okudum
+	addi	$sp,sp,-4	#stacki genişlettim 4 byte
+	sw	$t0,0($sp)	#n i stacke ittim
+	jal	fak		#faktoriyel çağırdım
+	addi	$sp,sp,4	#stacki küçülttüm
+	la   	$t0,sonuc	#sonucun adresini aldım
+	sw   	$v0,0($t0)	#adrese v0 return değerini yazdım	
+	li   	$v0, 10		#stop işlemi
+	syscall			#system çağrısı
+
+fak:	addi 	$sp, $sp,16
+	sw 	$ra, 12($sp)	#return adresi
+	sw 	$s1, 8($sp)	#n
+	sw 	$s2, 4($sp)	#f
+	sw 	$s3, 0($sp)	#i
+	
+	la	$s1, 16($sp)
+	lw	$s1,  0($s1)	#n
+	addi	$s2, $zero, 1	#f
+	addi	$s3, $zero, 1	#i
+if:	beq	$s1, $zero, exit
+	
+	
+while:	mul	$s2, $s2, $s3
+	lw	$s2, 4($sp)
+	
+
+
+
+
+
+
+slt	$t0, $s1, $s3
+	beq	$t0, $zero, endwhile
+endwhile:
+
+
+exit:	return f
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
